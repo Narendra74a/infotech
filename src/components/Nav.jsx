@@ -11,12 +11,12 @@ const Nav = () => {
 
   // Array containing navigation items
   const navItems = [
-    { id: 1, text: "Home",},
-    { id: 2, text: "About" },
-    { id: 3, text: "Company" },
-    { id: 4, text: "Career" },
-    { id: 5, text: "Services" },
-    { id: 6, text: "Contact" },
+    { id: 1, text: "Home",link:"/" },
+    { id: 2, text: "About",link:"/about" },
+    // { id: 3, text: "Company",link:"/company" },
+    { id: 4, text: "Career",link:"/career" },
+    { id: 5, text: "Services",link:"/services" },
+    { id: 6, text: "Contact",link:"/contact" },
   ];
 
   return (
@@ -31,7 +31,7 @@ const Nav = () => {
             key={item.id}
             className="p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-white"
           >
-            {item.text}
+            <a href={item.link}>{item.text}</a>
           </li>
         ))}
       </ul>

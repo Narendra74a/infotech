@@ -5,12 +5,12 @@ import h from '../assets/u.png'
 const WhychooseUs = () => {
   return (
  
-    <section className="bg-darkBlue text-lightBlue  py-16">
+    <section className="bg-darkBlue text-lightBlue  py-16 ">
       <div className="max-w-6xl mx-auto text-center ">
         <h2 className="text-3xl font-semibold mb-12">Why Choose Us</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8  ">
           {/* Card 1 */}
-          <div className="flex flex-col items-center p-8 bg-lightBlue/10 rounded-lg border-solid border-4 drop-shadow-xl">
+          <div className="flex flex-col items-center p-8 bg-lightBlue/10 rounded-lg border-solid border-4 drop-shadow-xl shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400">
           <img className="rounded-t-lg" src={global} alt="" />
             <h3 className="text-lg font-medium mb-4">We are global.</h3>
             <p className="text-sm">
@@ -18,7 +18,7 @@ const WhychooseUs = () => {
             </p>
           </div>
           {/* Card 2 */}
-          <div className="flex flex-col items-center p-8 bg-lightBlue/10 rounded-lg border-solid border-4 drop-shadow-xl">
+          <div className="shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400 flex flex-col items-center p-8 bg-lightBlue/10 rounded-lg border-solid border-4 drop-shadow-xl">
           <img className="rounded-t-lg" src={h} alt="" />
           
             <h3 className="text-lg font-medium mb-4">We value our clients.</h3>
@@ -27,7 +27,7 @@ const WhychooseUs = () => {
             </p>
           </div>
           {/* Card 3 */}
-          <div className="flex flex-col items-center p-8 bg-lightBlue/10 rounded-lg border-solid border-4 drop-shadow-xl">
+          <div className="shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400 flex flex-col items-center p-8 bg-lightBlue/10 rounded-lg border-solid border-4 drop-shadow-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-16 h-16 mb-6 text-lightBlue"

@@ -123,14 +123,7 @@ const Testmonial = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    {
-      image:
-        "https://media.licdn.com/dms/image/v2/D5603AQFOkZk15FUgjg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731703785204?e=2147483647&v=beta&t=FzMGiGBT-PEqT9SPnA0WRQMrjo1uoiZZkckR2ataX1M",
-      quote:
-        "Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.",
-      name: "Sarah Dayan",
-      role: "Staff Engineer, Algolia",
-    },
+    
     {
       image:
         "https://media.licdn.com/dms/image/v2/D5603AQFjd9yJuoW_4Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715254791611?e=2147483647&v=beta&t=BesbK6V1o8NEmvNYbrAl5o0roQd4-xpKlOGNs2k8pn4",
@@ -138,6 +131,22 @@ const Testmonial = () => {
         "Using Tailwind has significantly improved our development speed and design consistency across projects.",
       name: "John Doe",
       role: "Lead Developer, TechCorp",
+    },
+    {
+      image:
+        "https://media.licdn.com/dms/image/v2/D5635AQGdjTMTtcE39Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1736048660869?e=1737468000&v=beta&t=LUYP_oki3Asv8CfYocxeFsM5ZVeceAuhX2gZhv6IsV8",
+      quote:
+        "The utility-first approach of Tailwind CSS has completely transformed the way we think about styling in our apps.",
+      name: "Jane Smith",
+      role: "UI Designer, CreativeHub",
+    },
+    {
+      image:
+        "https://media.licdn.com/dms/image/v2/D5635AQGdjTMTtcE39Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1736048660869?e=1737468000&v=beta&t=LUYP_oki3Asv8CfYocxeFsM5ZVeceAuhX2gZhv6IsV8",
+      quote:
+        "The utility-first approach of Tailwind CSS has completely transformed the way we think about styling in our apps.",
+      name: "Jane Smith",
+      role: "UI Designer, CreativeHub",
     },
     {
       image:
@@ -162,18 +171,19 @@ const Testmonial = () => {
   };
 
   return (
-    <div className="relative w-full   px-28 py-4 pt-10 drop-shadow-xl" data-carousel="slide">
+    <div className="relative w-full   px-28  pt-10 drop-shadow-xl" data-carousel="slide">
       {/* Carousel Wrapper */}
       <div className="relative h-80  overflow-hidden rounded-lg md:h-96">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute  duration-700 ease-in-out w-full h-full ${
+            className={`absolute  duration-700 ease-in-out  w-full h-full ${
               currentSlide === index ? "block" : "hidden"
             }`}
           >
-            <figure className="md:flex max-w-full px-3 bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 h-full items-center">
+            <figure className="md:flex max-w-full p-10 bg-slate-100 rounded-xl  md:p-0 dark:bg-slate-800 h-full items-center">
               <img
+              
                 className="w-24 h-24 rounded-full md:w-48 md:h-48 object-cover mx-auto"
                 src={slide.image}
                 alt={slide.name}

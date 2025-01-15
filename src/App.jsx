@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -17,6 +18,24 @@ const App = () => {
       <Services />
       <WhychooseUs/>
       <Footer />
+
+  
+  
+
+
+
+{/*    
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/testmonial" element={<Testmonial />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/whychooseUs" element={<WhychooseUs />} />
+        </Routes>
+        <Footer />
+      </Router> */}
     </>
   );
 };
