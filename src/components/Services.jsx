@@ -24,16 +24,16 @@ const Services = () => {
   ];
   return (
     <>
-    <a href="#" class="flex drop-shadow-xl justify-center text-2xl/7 py-10 font-bold text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
+    <a href="#" class="flex drop-shadow-xl justify-center text-2xl/7 py-10 font-bold  text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
                 Services    
                 </a> 
-    <div className="grid grid-cols-1 px-24 sm:grid-cols-2 h-[100vh]: lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 p-20 px-24 sm:grid-cols-2 bg-[#f4f7fb]  lg:grid-cols-3 gap-6">
         
       {cardsData.map((card) => (
    
         <div
           key={card.id}
-          className="block rounded-lg bg-[#F0F8FF] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+          className="block rounded-lg  bg-[#F0F8FF] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
         >
           <TERipple>
             <div className="relative overflow-hidden bg-cover bg-no-repeat">
@@ -51,12 +51,12 @@ const Services = () => {
               {card.description}
             </p>
             <TERipple>
-              <button
+              {/* <button
                 type="button"
                 className="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
               >
                 Button
-              </button>
+              </button> */}
             </TERipple>
           </div>
         </div>

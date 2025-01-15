@@ -162,7 +162,7 @@ const Testmonial = () => {
   };
 
   return (
-    <div className="relative w-full  px-20 py-4 drop-shadow-xl" data-carousel="slide">
+    <div className="relative w-full   px-28 py-4 pt-10 drop-shadow-xl" data-carousel="slide">
       {/* Carousel Wrapper */}
       <div className="relative h-80  overflow-hidden rounded-lg md:h-96">
         {slides.map((slide, index) => (
@@ -180,7 +180,7 @@ const Testmonial = () => {
               />
               <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                 <blockquote>
-                  <p className="text-lg font-medium dark:text-slate-100">
+                  <p className="text-lg text-justify font-medium dark:text-slate-100">
                     {slide.quote}
                   </p>
                 </blockquote>

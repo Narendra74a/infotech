@@ -6,7 +6,7 @@ const Footer = () => {
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto">
                  <a href="#" class="flex justify-center text-2xl/7 font-bold text-white sm:truncate sm:text-3xl sm:tracking-tight">
-                 NeebInfoTech
+                 Neeb InfoTech
                 </a> 
                     <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-10 transition-all duration-500 py-8 mb-5 border-b border-gray-200">
                         <li><a href="#" class="text-gray-500 hover:text-white">Pagedone</a></li>
